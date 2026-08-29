@@ -152,10 +152,45 @@ Net_Amount = $billCharges
 ''');
 
 
+// Q
+List names = ['ali','ahmad','hamza'];
+for( String i in names){
+  print(i);
 
+}
 
+// Q
 
+List<String> days = [];
+days.add('monday');
+days.add('tuesday');
+days.add('rwednesday');
+days.add('thursday');
+print(days);
+// Q
 
+days.removeLast();
+print(days);
+days.removeLast();
+print(days);
+days.removeLast();
+print(days);
+days.removeLast();
+print(days);
 
+List numbers = [1,2,3,4,24,24,24,2];
+int largest = numbers[0];
+for(int i = 0 ;i<=numbers.length-1 ; i++){
+  if(largest<numbers[i]){
+    largest = numbers[i];
+  }
+}
+print(largest);
+
+// q
+numbers.sort();
+List largest_num = numbers.reversed.toList();
+print('Largest ${largest_num[0]}');
+print('Smallest ${numbers[0]}');
 
 }
